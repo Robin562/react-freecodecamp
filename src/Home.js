@@ -28,7 +28,7 @@ const Home = () => {
       <section
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 250px)",
+          gridTemplateColumns: "repeat(3, 30%)",
           gap: "1rem",
           margin: "1rem auto",
         }}
