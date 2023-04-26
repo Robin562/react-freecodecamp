@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div>
-      <h1>This is the About Page.</h1>
+      <h1>
+        Website made by Krishna using HTML, CSS, Javascript and React router
+      </h1>
       <Link to="/">Home</Link>
     </div>
   );
