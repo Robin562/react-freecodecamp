@@ -21,13 +21,14 @@ const Home = () => {
         </nav>
       </header>
       <input
-        placeholder="Search"
+        placeholder="Search Images"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         style={{
           margin: "1rem 0 0.5rem 50%",
           background: "white",
           transform: "translateX(-50%)",
+          color: "black",
           border: "none",
           padding: "0.5rem",
         }}
