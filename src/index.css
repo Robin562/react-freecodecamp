@@ -18,3 +18,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  background-color: aqua;
+}
+
+.btn {
+  border: none;
+  padding: 0 0.5rem;
+  background-color: royalblue;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  background-color: firebrick;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.label {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  margin-right: 0.5rem;
+  background: dodgerblue;
+  padding: 0.5rem;
+  border-radius: 15px;
+}
+
+.details-container {
+  margin-top: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.values {
+  letter-spacing: 0.1em;
+}

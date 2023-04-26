@@ -4,7 +4,7 @@ import { useGlobalContext } from "./context";
 const Home = () => {
   const { data, search, setSearch } = useGlobalContext();
   return (
-    <main>
+    <main style={{ margin: "auto" }}>
       <header
         style={{
           display: "flex",
@@ -24,33 +24,32 @@ const Home = () => {
         placeholder="Search"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
+        style={{
+          margin: "1rem 0 0.5rem 50%",
+          background: "white",
+          transform: "translateX(-50%)",
+          border: "none",
+          padding: "0.5rem",
+        }}
       />
       <section
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 30%)",
+          gridTemplateColumns: "repeat(3, 320px)",
           gap: "1rem",
-          margin: "1rem auto",
+          justifyContent: "center",
         }}
       >
         {data.map((item) => {
           const { webformatURL, id } = item;
           return (
-            <div
-              key={id}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                height: "200px",
-                alignItems: "center",
-              }}
-            >
+            <div key={id} className="picture">
               <img
                 src={webformatURL}
                 style={{ width: "100%", height: "100%" }}
               />
               <Link to={`description/${id}`}>
-                <button>Details</button>
+                <button className="btn">Details</button>
               </Link>
             </div>
           );

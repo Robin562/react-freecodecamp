@@ -8,11 +8,30 @@ const Description = () => {
   const { webformatURL, views, downloads } = currentPost;
   return (
     <div>
-      <Link to="/">Home</Link>
-      <section>
-        <img src={webformatURL} />
-        <p>Views: {views}</p>
-        <p>Downloads: {downloads}</p>
+      <Link
+        to="/"
+        style={{
+          margin: "auto",
+          background: "rebeccapurple",
+          fontSize: "1.5rem",
+          padding: "0.5rem",
+          textDecoration: "none",
+        }}
+      >
+        Home
+      </Link>
+      <section className="description-container">
+        <img src={webformatURL} style={{ border: "4px solid grey" }} />
+        <div className="details-container">
+          <p>
+            <span className="label"> Views :</span>
+            <span className="values">{views}</span>
+          </p>
+          <p>
+            <span className="label"> Downloads :</span>
+            <span className="values">{downloads}</span>
+          </p>
+        </div>
       </section>
     </div>
   );
