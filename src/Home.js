@@ -4,7 +4,7 @@ import { useGlobalContext } from "./context";
 const Home = () => {
   const { data, search, setSearch } = useGlobalContext();
   return (
-    <main style={{ margin: "auto" }}>
+    <main style={{ margin: "auto", maxWidth: "1000px" }}>
       <header
         style={{
           display: "flex",
@@ -36,7 +36,7 @@ const Home = () => {
       <section
         style={{
           display: "grid",
-          gridTemplateColumns: "repeat(3, 320px)",
+          gridTemplateColumns: "repeat(3, 30%)",
           gap: "1rem",
           justifyContent: "center",
         }}
